@@ -12,7 +12,7 @@ var handlers = {
     },
 
     'GetDemotivationalQuoteIntent': function () {
-        this.emit(':tell', getFact() );
+        this.emit(':tell', getQuote() );
     },
 
     'AMAZON.HelpIntent': function () {
@@ -28,23 +28,20 @@ var handlers = {
     }
 };
 
+//@todo Get quotes from DynamoDB.
+function getQuote() {
 
-function getFact() {
-    var myFacts = [
+    var myQuotes = [
         'Dream small. It\'s your only hope for success, really.',
         'Never give up. Never stop trying to exceed your limits. We need the entertainment.',
         'Stubbornness. Because somebody has to be right and it might aswell be me.',
         'Teams. Together we can do the work of one.'
     ]
 
-    var newFact = randomPhrase(myFacts);
-
-    return newFact;
+    return randomQuote(myQuotes);
 }
 
-function randomPhrase(array) {
-    // the argument is an array [] of words or phrases
-    var i = 0;
-    i = Math.floor(Math.random() * array.length);
+function randomQuote(array) {
+    var i = Math.floor(Math.random() * array.length);
     return(array[i]);
 }
