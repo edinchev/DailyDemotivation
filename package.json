@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/edinchev/AlexaDemotivationalQuotes#readme",
   "dependencies": {
-    "alexa-sdk": "^1.0.14"
+    "alexa-sdk": "^1.0.14",
+    "webdriverio": "^4.8.0"
   }
 }
