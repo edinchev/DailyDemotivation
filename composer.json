@@ -1,0 +1,12 @@
+{
+    "name": "edinchev/alexa-demotivational-quotes",
+    "authors": [
+        {
+            "name": "edinchev",
+            "email": "eric.dinchev@gmail.com"
+        }
+    ],
+    "require": {
+        "facebook/webdriver": "^1.4"
+    }
+}
