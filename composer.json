@@ -1,12 +1,17 @@
 {
-    "name": "edinchev/alexa-demotivational-quotes",
-    "authors": [
-        {
-            "name": "edinchev",
-            "email": "eric.dinchev@gmail.com"
-        }
-    ],
-    "require": {
-        "facebook/webdriver": "^1.4"
+  "name": "edinchev/alexa-demotivational-quotes",
+  "authors": [
+    {
+      "name": "edinchev",
+      "email": "eric.dinchev@gmail.com"
     }
+  ],
+  "require": {
+    "facebook/webdriver": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
 }
