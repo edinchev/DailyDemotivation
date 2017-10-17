@@ -61,10 +61,10 @@ class DespairScraper
             $this->driver->get($fullUrl);
 
             $this->printMessage("Getting page titles.");
-            $this->getQuoteTitles();
+            $this->scrapeQuoteTitles();
 
             $this->printMessage("Getting page descriptions.");
-            $this->getQuoteDescriptions();
+            $this->scrapeQuoteDescriptions();
         }
     }
 
@@ -106,9 +106,9 @@ class DespairScraper
     }
 
     /**
-     * @return array
+     *
      */
-    private function getQuoteTitles()
+    private function scrapeQuoteTitles()
     {
         $elements = $this->getElementsByCssSelector(self::SELECTOR_QUOTE_TITLE);
 
@@ -124,7 +124,7 @@ class DespairScraper
     /**
      *
      */
-    private function getQuoteDescriptions()
+    private function scrapeQuoteDescriptions()
     {
         $elements = $this->getElementsByCssSelector(self::SELECTOR_QUOTE_DESCRIPTION);
 
