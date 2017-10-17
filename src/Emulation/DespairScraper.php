@@ -1,6 +1,6 @@
 <?php
 
-namespace Emulation\PHP;
+namespace Emulation;
 
 use Exception;
 use Facebook\WebDriver\Remote\DesiredCapabilities;
@@ -8,7 +8,7 @@ use Facebook\WebDriver\Remote\RemoteWebDriver;
 use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverExpectedCondition;
 
-require_once('../../../vendor/autoload.php');
+require_once('../../vendor/autoload.php');
 
 class DespairScraper
 {
